@@ -1,0 +1,29 @@
+Customer Risk Analysis: Identify customers with low credit scores and high-risk loans to predict potential defaults and prioritize risk mitigation strategies.
+
+Loan Purpose Insights: Determine the most popular loan purposes and their associated revenues to align financial products with customer demands
+
+High-Value Transactions: Detect transactions that exceed 30% of their respective loan amounts to flag potential fraudulent activities
+
+Missed EMI Count: Analyze the number of missed EMIs per loan to identify loans at risk of default and suggest intervention strategies
+
+Regional Loan Distribution: Examine the geographical distribution of loan disbursements to assess regional trends and business opportunities. 
+
+Loyal Customers: List customers who have been associated with Cross River Bank for over five years and evaluate their loan activity to design loyalty programs.
+
+High-Performing Loans: Identify loans with excellent repayment histories to refine lending policies and highlight successful products.
+
+Age-Based Loan Analysis: Analyze loan amounts disbursed to customers of different age groups to design targeted financial products.
+
+Seasonal Transaction Trends: Examine transaction patterns over years and months to identify seasonal trends in loan repayments.
+
+Fraud Detection: Highlight potential fraud by identifying mismatches between customer address locations and transaction IP locations.
+
+Repayment History Analysis: Rank loans by repayment performance using window functions.
+
+Credit Score vs. Loan Amount: Compare average loan amounts for different credit score ranges.
+
+Top Borrowing Regions: Identify regions with the highest total loan disbursements.
+
+Early Repayment Patterns: Detect loans with frequent early repayments and their impact on revenue.
+
+Feedback Correlation: Correlate customer feedback sentiment scores with loan statuses.
