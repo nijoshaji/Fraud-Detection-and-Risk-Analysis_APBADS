@@ -1,3 +1,5 @@
+## This file contains the queries used to extract information from the database 
+
 # 1. Customer Risk Analysis: Identify customers with low credit scores and high-risk loans to 
 #predict potential defaults and prioritize risk mitigation strategies.
 
