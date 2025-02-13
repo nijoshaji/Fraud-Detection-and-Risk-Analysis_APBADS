@@ -1,0 +1,40 @@
+MongoDB Tasks
+
+1. Create database - cross_river
+2. Create collections - behaviour and feedback
+3. Import json to respective collections
+4. Add a document to feedback collection
+5. Update a document in a collection
+
+
+6.  Fetch Logs for 'Missed Payment' Actions
+answer - {"action": "Missed Payment"} - 950 records found
+
+7.Retrieve feedback entries with sentiment scores greater than 0.5.
+answer - { 'sentiment_score': { $gte: 0.5 } }
+
+8. Create an aggregation pipeline for fraud detection and behaviour analysis.
+
+step 1 : join 2 collections using $lookup
+
+{
+  from: "behaviour",
+  localField: "customer_id",
+  foreignField: "customer_id",
+  as: "behavior_data"
+}
+
+step 2: Flatten the array (from join) using $unwind
+
+  {
+    path: "$behavior_data"
+  }
+
+step 3 : Group the data by customer id and find average sentiment score
+
+{
+  _id: "$customer_id",
+  avg_sentiment_score: {
+    $sum: "$sentiment_score"
+  }
+}
